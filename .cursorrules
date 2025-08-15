@@ -1,0 +1,254 @@
+# Cursor Rules for ISTQB Study Notes Generation
+
+## 笔记格式标准 / Note Format Standards
+
+### 1. 文件结构 / File Structure
+每个学习笔记文件必须包含以下部分：
+
+#### 1.1 标题格式 / Title Format
+```markdown
+# ISTQB Foundation - [章节名称] / [Chapter Name]
+```
+
+#### 1.2 概述部分 / Overview Section
+```markdown
+## 概述 / Overview
+- **课程 / Course**: ISTQB Foundation - [具体课程名称]
+- **机构 / Organization**: Technica Engineering GmbH
+- **日期 / Date**: [学习日期]
+- **章节 / Chapter**: [章节名称]
+```
+
+#### 1.3 学习目标 / Learning Objectives
+```markdown
+## 学习目标 / Learning Objectives
+
+### [章节编号] [章节标题] / [Chapter Title]
+#### FL-[编号] (K[级别]) [具体目标] / [Specific Objective]
+```
+
+#### 1.4 主要内容 / Main Content
+```markdown
+## 主要内容 / Main Content
+
+### [序号]. [主题] / [Topic]
+
+#### [子主题] / [Sub-topic]
+
+**定义 / Definition**: [中英文定义]
+
+**特点 / Characteristics**:
+- [特点1] / [Characteristic 1]
+- [特点2] / [Characteristic 2]
+
+**应用场景 / Application Scenarios**:
+- [场景1] / [Scenario 1]
+- [场景2] / [Scenario 2]
+```
+
+### 2. 内容质量标准 / Content Quality Standards
+
+#### 2.1 双语对照 / Bilingual Format
+- 所有重要概念必须提供中英文对照
+- 格式：中文 / English
+- 确保翻译准确性和专业性
+
+#### 2.2 结构化组织 / Structured Organization
+- 使用清晰的层级结构（###, ####, **, -）
+- 每个概念都要有明确的定义和解释
+- 提供具体的例子和应用场景
+
+#### 2.3 对比表格 / Comparison Tables
+对于对比性内容，使用表格格式：
+```markdown
+| 概念A / Concept A | 概念B / Concept B |
+|---|---|
+| [特征1] / [Feature 1] | [特征1] / [Feature 1] |
+| [特征2] / [Feature 2] | [特征2] / [Feature 2] |
+```
+
+### 3. 考试题目格式 / Exam Question Format
+
+#### 3.1 题目结构 / Question Structure
+```markdown
+### [章节]题目 / [Chapter] Questions
+
+1. **问题**: [中文问题] / [English Question]
+   - **答案**: [选项] [中文解释] / [English Explanation]
+```
+
+#### 3.2 题目要求 / Question Requirements
+- 每个章节至少包含2-3个典型题目
+- 题目要涵盖该章节的核心概念
+- 提供详细的解释和理由
+
+### 4. 重要概念总结 / Key Concepts Summary
+
+#### 4.1 总结格式 / Summary Format
+```markdown
+## 重要概念总结 / Key Concepts Summary
+
+### [主题分类] / [Topic Category]
+- **[概念1]**: [定义] / [Definition]
+- **[概念2]**: [定义] / [Definition]
+```
+
+### 5. 参考资料 / References
+
+#### 5.1 参考资料格式 / Reference Format
+```markdown
+## 参考资料 / References
+- [主题]: [链接]
+- [主题]: [链接]
+```
+
+### 6. 质量检查清单 / Quality Checklist
+
+#### 6.1 内容检查 / Content Check
+- [ ] 所有重要概念都有中英文对照
+- [ ] 结构清晰，层级合理
+- [ ] 包含具体的例子和应用场景
+- [ ] 提供考试题目和练习
+- [ ] 包含重要概念总结
+
+#### 6.2 格式检查 / Format Check
+- [ ] 标题格式统一
+- [ ] 中英文对照格式一致
+- [ ] 表格格式规范
+- [ ] 链接和参考资料完整
+
+#### 6.3 专业性检查 / Professional Check
+- [ ] 术语使用准确
+- [ ] 概念解释清晰
+- [ ] 符合ISTQB标准
+- [ ] 内容完整且准确
+
+### 7. 特殊要求 / Special Requirements
+
+#### 7.1 PPT内容提取 / PPT Content Extraction
+当从PPT提取内容时：
+- 保持原始信息的完整性
+- 重新组织为结构化格式
+- 添加必要的解释和上下文
+- 确保内容的可读性和学习价值
+
+#### 7.2 学习进度更新 / Learning Progress Update
+- 及时更新学习进度
+- 标记已完成和待完成的内容
+- 提供学习建议和策略
+
+### 8. 文件命名规范 / File Naming Convention
+
+#### 8.1 命名格式 / Naming Format
+```
+[章节编号]_[章节名称]_[中文名称].md
+```
+
+#### 8.2 示例 / Examples
+- `01_Testing_Fundamentals_测试基础.md`
+- `02_Testing_Activities_and_Roles_测试活动和角色.md`
+- `03_Static_Testing_静态测试.md`
+- `04_Testing_Throughout_Software_Lifecycle_软件生命周期中的测试.md`
+- `05_Test_Analysis_and_Design_测试分析和设计.md`
+- `06_Test_Management_测试管理.md`
+- `07_Test_Tools_测试工具.md`
+
+#### 8.3 章节结构标准化 / Chapter Structure Standardization
+严格按照ISTQB Foundation标准章节结构：
+1. **01_Testing_Fundamentals_测试基础** - 测试基础概念和原理
+2. **02_Testing_Activities_and_Roles_测试活动和角色** - 测试活动和角色定义
+3. **03_Static_Testing_静态测试** - 静态测试技术和方法
+4. **04_Testing_Throughout_Software_Lifecycle_软件生命周期中的测试** - 软件生命周期中的测试
+5. **05_Test_Analysis_and_Design_测试分析和设计** - 测试分析和设计技术
+6. **06_Test_Management_测试管理** - 测试管理和管理技术
+7. **07_Test_Tools_测试工具** - 测试工具和自动化
+
+#### 8.4 文件整理规则 / File Organization Rules
+- **避免重复文件**: 同一章节内容应合并为一个文件
+- **删除临时文件**: 清理临时文件和重复文件
+- **统一命名**: 确保所有文件命名符合标准格式
+- **章节对应**: 确保文件内容与章节编号对应
+
+### 9. 内容合并和整理 / Content Merging and Organization
+
+#### 9.1 内容合并原则 / Content Merging Principles
+- **完整性**: 合并后的内容应包含所有原始信息
+- **结构化**: 重新组织为清晰的结构化格式
+- **去重**: 删除重复的内容和概念
+- **补充**: 添加必要的解释和上下文
+
+#### 9.2 多文件合并流程 / Multi-file Merging Process
+1. **分析原始文件**: 理解每个文件的内容和结构
+2. **识别重复内容**: 找出重复的概念和内容
+3. **设计新结构**: 设计合并后的文件结构
+4. **重新组织内容**: 按照新结构重新组织内容
+5. **补充缺失内容**: 添加必要的解释和例子
+6. **质量检查**: 确保合并后的内容质量
+
+#### 9.3 内容标准化 / Content Standardization
+- **术语统一**: 确保术语使用的一致性
+- **格式统一**: 确保格式和样式的统一
+- **深度一致**: 确保内容深度和详细程度的一致性
+- **质量一致**: 确保所有内容都符合质量标准
+
+### 10. 更新和维护 / Updates and Maintenance
+
+#### 10.1 版本控制 / Version Control
+- 每次更新都要记录日期
+- 保持文件的历史版本
+- 定期检查和更新内容
+
+#### 10.2 内容审核 / Content Review
+- 定期检查内容的准确性
+- 更新过时的信息
+- 添加新的学习资源
+
+#### 10.3 文件整理维护 / File Organization Maintenance
+- **定期检查**: 定期检查文件命名和结构
+- **及时整理**: 发现问题时及时整理
+- **保持标准**: 确保始终符合命名和结构标准
+- **文档更新**: 及时更新相关文档和索引
+
+### 11. 错误处理和纠正 / Error Handling and Correction
+
+#### 11.1 常见错误类型 / Common Error Types
+- **命名错误**: 文件命名不符合标准
+- **结构错误**: 文件结构不清晰或不完整
+- **内容错误**: 内容质量不符合标准
+- **重复错误**: 存在重复的文件或内容
+
+#### 11.2 纠正流程 / Correction Process
+1. **识别问题**: 准确识别存在的问题
+2. **分析原因**: 分析问题产生的原因
+3. **制定方案**: 制定具体的纠正方案
+4. **执行纠正**: 按照方案执行纠正
+5. **验证结果**: 验证纠正后的结果
+6. **预防措施**: 制定预防类似问题的措施
+
+### 12. 自动化工具支持 / Automation Tool Support
+
+#### 12.1 脚本工具 / Script Tools
+- **PPT提取脚本**: 自动提取PPT内容
+- **文件重命名脚本**: 批量重命名文件
+- **内容检查脚本**: 检查内容质量和格式
+- **结构验证脚本**: 验证文件结构完整性
+
+#### 12.2 工具使用规范 / Tool Usage Standards
+- **备份原始文件**: 使用工具前备份原始文件
+- **测试验证**: 在小范围测试验证工具效果
+- **人工检查**: 工具处理后进行人工检查
+- **文档记录**: 记录工具使用过程和结果
+
+---
+
+## 使用说明 / Usage Instructions
+
+1. **创建新笔记时**：严格按照上述格式标准
+2. **更新现有笔记时**：确保符合质量标准
+3. **内容提取时**：重新组织为结构化格式
+4. **质量检查时**：使用检查清单确保质量
+5. **文件整理时**：按照命名规范和章节结构标准
+6. **内容合并时**：遵循合并原则和流程
+7. **错误纠正时**：按照纠正流程处理问题
+
+这个规则文件将确保所有生成的笔记都符合统一的高质量标准，并建立标准化的文件管理和内容组织流程。 

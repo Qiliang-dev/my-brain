@@ -1,0 +1,4 @@
+mcp>=0.1.0
+asyncio
+psycopg2-binary
+python-dotenv

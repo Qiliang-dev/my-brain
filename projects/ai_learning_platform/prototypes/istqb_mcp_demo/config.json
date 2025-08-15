@@ -1,0 +1,144 @@
+{
+  "mcpServers": {
+    "istqb_learning_platform": {
+      "command": "python",
+      "args": ["mcp_server.py"],
+      "cwd": "/path/to/your/istqb_mcp_demo",
+      "env": {
+        "PYTHONPATH": "/path/to/your/istqb_mcp_demo"
+      },
+      "description": "ISTQB学习平台MCP服务器，提供个性化学习路径生成、用户准备度评估等功能"
+    }
+  },
+  "tools": {
+    "generate_istqb_learning_path": {
+      "description": "为转码人士生成个性化的ISTQB学习路径",
+      "parameters": {
+        "user_id": "用户ID",
+        "background": "用户背景（如：计算机科学专业、机械工程专业等）",
+        "programming_experience": "编程经验（无经验、基础、有经验）",
+        "testing_experience": "测试经验（无经验、基础、有经验）",
+        "learning_style": "学习风格（视觉型、听觉型、实践型）",
+        "available_hours_per_week": "每周可用学习时间（小时）",
+        "target_certification_date": "目标认证日期（可选）"
+      },
+      "returns": {
+        "learning_path": "推荐学习路径",
+        "time_schedule": "时间安排",
+        "learning_advice": "学习建议",
+        "recommended_projects": "推荐实践项目",
+        "estimated_total_hours": "总学习时长",
+        "confidence_score": "推荐置信度"
+      }
+    },
+    "assess_user_readiness": {
+      "description": "评估用户学习ISTQB的准备度",
+      "parameters": {
+        "user_id": "用户ID（可选）",
+        "background": "用户背景",
+        "programming_experience": "编程经验",
+        "testing_experience": "测试经验（可选）",
+        "learning_style": "学习风格（可选）",
+        "available_hours_per_week": "每周可用学习时间（可选）"
+      },
+      "returns": {
+        "background_analysis": "背景分析结果",
+        "recommendations": "准备建议",
+        "estimated_preparation_time": "预估准备时间"
+      }
+    },
+    "get_istqb_curriculum": {
+      "description": "获取ISTQB课程大纲信息",
+      "parameters": {},
+      "returns": {
+        "curriculum": "课程大纲",
+        "total_chapters": "总章节数",
+        "total_hours": "总学习时长"
+      }
+    },
+    "get_survey_questions": {
+      "description": "获取ISTQB学习问卷调查问题列表",
+      "parameters": {},
+      "returns": {
+        "questions": "问卷问题列表",
+        "total_questions": "问题总数",
+        "question_types": "支持的问题类型"
+      }
+    },
+    "analyze_user_profile": {
+      "description": "基于用户信息分析学习准备度并生成学习计划",
+      "parameters": {
+        "user_id": "用户ID（可选）",
+        "background": "用户背景",
+        "programming_experience": "编程经验",
+        "testing_experience": "测试经验（可选）",
+        "learning_style": "学习风格（可选）",
+        "available_hours_per_week": "每周可用学习时间（可选）",
+        "learning_goals": "学习目标（可选）",
+        "current_skills": "当前技能（可选）",
+        "challenges": "预期挑战（可选）"
+      },
+      "returns": {
+        "user_id": "用户ID",
+        "analysis_result": "用户分析结果",
+        "learning_plan": "学习计划",
+        "generated_at": "生成时间"
+      }
+    },
+    "generate_learning_path_from_survey": {
+      "description": "基于问卷调查生成个性化学习路径",
+      "parameters": {
+        "user_id": "用户ID（可选）",
+        "survey_responses": "问卷回答列表"
+      },
+      "returns": {
+        "user_id": "用户ID",
+        "survey_analysis": "问卷分析结果",
+        "learning_path": "学习路径",
+        "data_saved_to": "数据保存位置",
+        "generated_at": "生成时间"
+      }
+    },
+    "get_survey_statistics": {
+      "description": "获取问卷调查统计信息",
+      "parameters": {},
+      "returns": {
+        "statistics": "统计信息",
+        "generated_at": "生成时间"
+      }
+    }
+  },
+  "usage_examples": {
+    "scenario_1": {
+      "description": "计算机专业转码人士咨询ISTQB学习",
+      "user_input": "我是计算机科学专业的，有编程经验，想学习ISTQB认证",
+      "ai_response": "我来帮你制定个性化的ISTQB学习方案。让我先评估一下你的学习准备度，然后为你生成最适合的学习路径。",
+      "tool_calls": [
+        "assess_user_readiness",
+        "generate_istqb_learning_path"
+      ]
+    },
+    "scenario_2": {
+      "description": "非计算机专业转码人士咨询",
+      "user_input": "我是机械工程专业的，没有编程经验，想转行做软件测试",
+      "ai_response": "我理解你的转行需求。让我先评估一下你的准备度，然后为你制定一个从基础开始的学习计划。",
+      "tool_calls": [
+        "assess_user_readiness",
+        "generate_istqb_learning_path"
+      ]
+    }
+  },
+  "installation": {
+    "requirements": [
+      "pip install mcp",
+      "pip install asyncio",
+      "pip install psycopg2-binary"
+    ],
+    "setup_steps": [
+      "1. 安装Python依赖",
+      "2. 配置MCP服务器路径",
+      "3. 启动MCP服务器",
+      "4. 在AI模型中配置MCP工具"
+    ]
+  }
+}
